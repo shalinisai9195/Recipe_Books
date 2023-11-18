@@ -18,7 +18,7 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`https://booksforfoods.onrender.com/${id}`)
+        .get(`https://booksforfoods.onrender.com/books/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.book));
     };
