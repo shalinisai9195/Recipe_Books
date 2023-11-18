@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <Box display="flex" flexDirection="column" className="homeImg" alignItems="center" textAlign="center">
+      
+      <Box display="flex"  flexDirection="column" className="homeImg" alignItems="center" textAlign="center">
+      <h5 style={{alignItems:"center",justifyContent:"center",
+      fontFamily:"cursive", 
+      fontSize:'30px',
+      letterSpacing:'1px',
+    textShadow:'2px 2px 4px #EC5A5A'}}
+      >Recipe Books</h5>
         <Button
           LinkComponent={Link}
           to="/books"
