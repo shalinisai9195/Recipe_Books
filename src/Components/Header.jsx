@@ -22,7 +22,7 @@ const Header = () => {
             textColor="inherit"
             indicatorColor="primary"
             value={value}
-            onChange={(val) => setValue(val)}
+            onChange={(e,val) => setValue(val)}
           >
             <Tab LinkComponent={NavLink} to="/add"  label="Add Book" />
             <Tab LinkComponent={NavLink} to="/books"  label="Books" />
