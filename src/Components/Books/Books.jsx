@@ -3,7 +3,7 @@ import "./Book.css";
 import axios from "axios";
 import Book from "./Book";
 
-const URL = "http://localhost:7100/books";
+const URL = "https://booksforfoods.onrender.com/books";
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);
 };

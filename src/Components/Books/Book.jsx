@@ -11,7 +11,7 @@ const Book = (props) => {
   
   const deleteHandler = async () => {
     await axios
-      .delete(`http://localhost:7100/books/${_id}`)
+      .delete(`https://booksforfoods.onrender.com/books/${_id}`)
       .then((res) => res.data)
       .then(() => history("/"))
       .then(() => history("/books"));

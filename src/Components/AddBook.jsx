@@ -1,11 +1,4 @@
-import {
-  Button,
-  Checkbox,
-  FormControlLabel,
-  FormLabel,
-  TextField,
-  Typography,
-} from "@mui/material";
+import {Button, Checkbox, FormControlLabel, FormLabel, TextField } from "@mui/material";
 import { Box } from "@mui/system";
 import axios from "axios";
 import React, { useState } from "react";
@@ -33,7 +26,7 @@ const AddBook = () => {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:7100/books", {
+      .post("https://booksforfoods.onrender.com/books", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
